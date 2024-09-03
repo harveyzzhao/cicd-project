@@ -28,6 +28,7 @@ pipeline {
                     sleep(10)
 
                     // run the test script to check if url is reachable
+                    sh 'chmod +x test_url.sh'
                     sh './test_url.sh'
                 }
             }
